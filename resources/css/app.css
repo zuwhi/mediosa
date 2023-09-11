@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+    @apply font-bold;
+}
+
+h2 {
+    @apply text-[40px] leading-[48px] md:text-[56px] md:leading-[64px];
+}
+
+.hamburger {
+    @apply w-[30px] h-[2px] my-1.5 block bg-black;
+}
+.input-custom{
+    @apply bg-gray-50   border border-gray-300 outline-none text-gray-900 dark:text-slate-200 text-sm rounded-lg  block w-full pl-10 p-2.5  dark:border-slate-600 focus:border-2  focus:border-Oldgreen focus:ring-0  shadow-sm  focus:outline-none  focus:text-gray-900 dark:focus:text-white dark:bg-slate-600 dark:focus:ring-Oldgreen dark:focus:ring-1 dark:placeholder-gray-400
+}
+.menu-li {
+    @apply sm:my-3 my-1 flex items-center rounded-lg transition duration-300 hover:text-Oldgreen hover:rounded-lg hover:scale-90  hover:bg-slate-100 dark:hover:bg-slate-500  w-full;
+}
+.menu-aktif {
+    @apply text-Oldgreen group-active:block active:block;
+}
+.shadow-green {
+    @apply border-2 dark:border border-slate-200 dark:border-slate-500/50 shadow-lg;
+}
+.content > * {
+    @apply md:col-span-1;
+}
+.ring-nav {
+    @apply ring-2 ring-slate-300;
+}
+
+.putar {
+    @apply -rotate-180;
+}
+.sidebar-hiddden {
+    @apply hidden;
+}
+.sidebar-active {
+    @apply flex flex-col items-center;
+}
+.bagan {
+    @apply opacity-0;
+}
+.rekomend {
+    @apply p-2 ml-3 text-slate-400 hover:text-slate-600 cursor-pointer text-xl font-semibold  mt-[2px] rounded-lg;
+}
+.tag-custom {
+    @apply text-slate-500 md:col-span-3 h-8 md:text-lg ring-1 ring-slate-400 col-span-6 flex justify-between bg-white items-center  shadow-sm  py-2 px-3 rounded-lg max-w-lg;
+}
+.remove-tag {
+    @apply cursor-pointer text-red-500 relative left-1 top-[2px] flex items-center   rounded-full;
+}
+.bar-active {
+    @apply bg-white rounded-2xl shadow text-gray-900 transition-colors duration-200;
+}
+
+.fadeAll {
+    @apply animate-fadeIn opacity-100;
+}
+.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+.riwayat-label {
+    @apply  max-w-[98px] rounded-2xl overflow-hidden p-1 shadow bg-white z-20;
+}
+.bagan {
+    @apply dark:bg-slate-800 dark:text-slate-500 dark:border-slate-400 shadow;
+}
+
+.side-dmode {
+    @apply bg-white dark:bg-slate-800 text-slate-100;
+}
+.side-dmode{
+    @apply bg-white;
+}
+.dmode {
+    @apply bg-bluebg dark:bg-slate-900;
+}
+.box{
+    @apply bg-white dark:bg-slate-800 dark:text-slate-500 dark:border-slate-400;
+}
+.bg-box{
+    @apply bg-white dark:bg-slate-600 dark:text-slate-400 text-gray-400 
+}
+.box-text{
+    @apply text-teal-400 dark:text-teal-400 
+}
+.box-title{
+    @apply bg-teal-400 dark:bg-teal-600
+}
+/* .bg-teal-400 {
+    @apply bg-teal-400 dark:bg-purple-500;
+} */
+.middle {
+    @apply flex justify-center items-center;
+}
+.nav-link {
+    @apply flex text-gray-500   items-center w-[100%] h-[2.7rem] rounded-lg overflow-hidden;
+}
+.hover-link {
+    @apply hover:bg-teal-400 dark:hover:bg-teal-400   hover:text-white transition duration-200;
+}
+.aktif {
+    @apply text-white  bg-teal-400 dark:bg-teal-400  shadow;
+}
+.lebar {
+    @apply w-[90px] transition-all duration-300 ease-linear;
+}
+.lebar-main {
+    @apply ml-[90px] transition-all duration-300 ease-linear;
+}
+.panah-rotate {
+    @apply rotate-180 duration-200 transition;
+}
+.load-animation::after {
+    content: "";
+    animation: load 2s infinite;
+    display: inline-block;
+}
+@keyframes load {
+    0%,
+    20% {
+        content: "";
+    }
+    40% {
+        content: " .";
+    }
+    60% {
+        content: " . .";
+    }
+    80%,
+    100% {
+        content: " . . .";
+    }
+}
